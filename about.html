@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — DECK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#14161a;
+    --panel:#1c1f24;
+    --panel-raised:#22262c;
+    --text:#eae6da;
+    --muted:#767c85;
+    --amber:#e8a13c;
+    --line:#33383f;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:radial-gradient(ellipse at top, #1a1d22 0%, var(--bg) 60%);
+    color:var(--text);
+    font-family:'IBM Plex Mono', monospace;
+    min-height:100vh;
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    padding:48px 16px;
+  }
+  .deck{
+    width:100%;
+    max-width:640px;
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:10px;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.03);
+    overflow:hidden;
+  }
+  .deck-top{
+    padding:22px 26px 18px;
+    border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  }
+  .brand{
+    font-family:'Big Shoulders Display', sans-serif;
+    font-weight:800;
+    font-size:34px;
+    letter-spacing:1px;
+    color:var(--text);
+  }
+  .brand span{color:var(--amber);}
+  .subtitle{
+    font-size:11px;
+    color:var(--muted);
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    margin-top:6px;
+  }
+  .body-area{padding:26px;}
+  h2{
+    font-family:'Big Shoulders Display', sans-serif;
+    font-weight:700;
+    font-size:20px;
+    letter-spacing:0.3px;
+    margin:0 0 10px;
+    color:var(--amber);
+  }
+  p{
+    font-size:13px;
+    line-height:1.75;
+    color:var(--text);
+    margin:0 0 20px;
+  }
+  a{color:var(--amber);}
+  .back{
+    display:inline-block;
+    margin-top:6px;
+    font-size:11px;
+    color:var(--muted);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+  }
+  .back:hover{color:var(--text); border-bottom-color:var(--muted);}
+</style>
+</head>
+<body>
+
+<div class="deck">
+  <div class="deck-top">
+    <div class="brand">DE<span>CK</span></div>
+    <div class="subtitle">About this tool</div>
+  </div>
+
+  <div class="body-area">
+    <h2>What this is</h2>
+    <p>
+      DECK is a small, free tool that pulls the audio out of an MP4 video and saves it as an
+      MP3 — nothing more. It was built to solve one specific, annoying problem: needing an
+      MP3 from a video clip without installing software or uploading anything to a stranger's
+      server.
+    </p>
+
+    <h2>Why it's local-only</h2>
+    <p>
+      Every conversion happens inside your own browser tab. Your video file is decoded and
+      re-encoded entirely on your device — it's never sent anywhere, which means no waiting on
+      uploads, no file size limits imposed by a server, and no privacy trade-off. Close the tab
+      and everything's gone, exactly as it should be for a tool like this.
+    </p>
+
+    <h2>Who made it</h2>
+    <p>
+      DECK is an independent, one-person project — not affiliated with any video platform or
+      software company. If it saved you a step, a coffee tip on the main page helps keep it
+      free and ad-light.
+    </p>
+
+    <a class="back" href="index.html">← Back to the converter</a>
+  </div>
+</div>
+
+</body>
+</html>
